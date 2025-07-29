@@ -13,7 +13,6 @@ jobs:
       - name: Deploy to test server
         uses: appleboy/ssh-action@master
         with:
-          debug: true
           host: ${{ vars.HOST }}
           username: ${{ vars.USERNAME }}
           key: ${{ secrets.KEY }}
